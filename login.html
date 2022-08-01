@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(208, 198, 198)">
+
+    <h1>Ingresa tus datos 
+    </h1> 
+    <form name="login"> 
+         <table width="200" border="0"> 
+           <tr> 
+             <th scope="row"><h2>Usuario</h2></th> 
+             <td><span class="cnt"> 
+               <input name="usuario" type="text" class="Input" value="" size="20" /> 
+             </span></td> 
+           </tr> 
+           <tr> 
+             <th height="33" scope="row"><h2>Clave</h2></th> 
+             <td><span class="cnt"> 
+               <input name="password" type="password" class="Input" value="" size="20" /> 
+             </span></td> 
+             <td><span class="cnt"> 
+               <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+             </span></td> 
+           </tr> 
+           <tr> 
+             <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Limpiar" class="boton" /></th> 
+           </tr> 
+         </table> 
+    </form> 
+    
+    <script language="JavaScript"> 
+    function Login(){ 
+    var done=0; 
+    var usuario=document.login.usuario.value; 
+    var password=document.login.password.value; 
+    if (usuario=="Octavio" && password=="1111") { 
+    window.location="menu.html"; 
+    //alert("datos correctos")
+
+
+    } 
+    if (usuario=="Gera" && password=="1111") { 
+    window.location="menu.html"; 
+    } 
+
+    if (usuario=="Maui" && password=="1111") { 
+    window.location="menu.html"; 
+    } 
+
+    if (usuario=="" && password=="") { 
+         alert("Ingresa usuario y contraseña")
+    // window.location="errorpopup.html"; 
+    } 
+    } 
+    </script> 
+
+
+    
+</body>
+</html>
